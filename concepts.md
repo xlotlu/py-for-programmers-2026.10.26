@@ -82,6 +82,8 @@ not in
 
 # Important Exceptions
 
+NameError:   simbolul respectiv (variabila) nu este definit
+
 TypeError:   apare când s-au făcut operațiuni
              nesuportate de acel data-type.
              apare când o funcție primește
@@ -90,6 +92,9 @@ ValueError:  apare când valoarea este nepotrivită.
              (ce înseamnă asta este context-dependent.)
 IndexError:  nu există indexul
 KeyError:    nu există cheia
+
+UnboundLocalError: la fel ca NameError, doar că simbolul
+                   este definit mai jos în cod
 
 # VSCode utils
 Ctrl+F5    run without debugging
@@ -103,3 +108,5 @@ readability avoids bugs
 
 There are 10 types of people, those who can read binary and those who can't.
 
+
+There are 2 most difficult problems in computing:
