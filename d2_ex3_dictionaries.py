@@ -76,3 +76,24 @@ for item in dcities.items():
     print(item)
 
 
+for key, value in dcities.items():
+    print(key, value, sep=" » ")
+
+# returnează o valoare default dacă cheia nu există
+# altfel valoarea existentă
+dcities.get("bla")
+dcities.get("Constanța", 0)
+
+# setează o valoare doar dacă cheia nu există:
+dcities.setdefault("Suceava", 1200)
+dcities.setdefault("Xuceava", 1200)
+
+# pop the key, return the value
+dcities.pop("Xuceava")
+
+# pop the last (key, value) pair.
+dcities.popitem()
+
+
+# acesta este un "classmethod":
+dict.fromkeys(["aia", "asta", "și cealaltă"])
