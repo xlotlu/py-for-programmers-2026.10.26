@@ -15,11 +15,12 @@ Python este whitespace-sensitive!
 în Python, totul poate fi evaluat în context boolean
 
 
-iterable:
- something that can be.... iterated
- (funcționează într-un for)
+iterable: something that can be.... iterated
+          (funcționează într-un for)
 
-
+iterator: un iterabil suspendat în execuție.
+          suportă next().
+ 
 # De citit
 
 (măcar o dată în viața de programator Python)
@@ -30,14 +31,18 @@ https://peps.python.org/pep-0008/
  
 # Data types
 
+## basic data types:
+
 str
 int
+float
 bool
 
 tuple   # immutable
 list    # mutable
 
 ## "sequences":
+
 - sunt iterabile (cu for)
 - sunt colecții ordonate
 - sunt accesibile după index
@@ -51,7 +56,6 @@ list    # mutable
 
 print()
 help()
-
 
 
 # Operators
@@ -84,7 +88,8 @@ TypeError:   apare când s-au făcut operațiuni
              număr invalid de parmetri.
 ValueError:  apare când valoarea este nepotrivită.
              (ce înseamnă asta este context-dependent.)
-
+IndexError:  nu există indexul
+KeyError:    nu există cheia
 
 # VSCode utils
 Ctrl+F5    run without debugging
@@ -96,6 +101,5 @@ Ctrl+/     comment
 
 readability avoids bugs
 
-
-
 There are 10 types of people, those who can read binary and those who can't.
+

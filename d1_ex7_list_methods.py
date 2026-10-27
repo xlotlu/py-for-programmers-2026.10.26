@@ -87,15 +87,3 @@ def remove(lst, elem):
 
     # elem was not found
     raise ValueError("not found")
-
-# Mâine:
-# dată fiind structura de date
-# bi-dimensională
-# de forma (city, distance)
-[
-    ("București", 0),
-    ("Constanța", 270),
-    ("Cluj", 470),
-    ("Ploiești", 62),
-]
-# sortați-o după distanță
