@@ -156,7 +156,7 @@ occupations = {
     "Jane": "nurse",
     "Dan": "firefighter",
     "Mike": "dancer",
-    "Sam": "boat captain",
+    #"Sam": "boat captain",
     "Anna": "gardner",
 }
 # unde cheia este numele și valoarea este ocupația,
@@ -164,3 +164,18 @@ occupations = {
 # astfel încât să setați cheia "occupation"
 # cu valoarea potrivită.
 
+for f in friends_as_dicts:
+    name = f['name']
+    occ = occupations[name]
+
+    if name in occupations:
+        f['occupation'] = occ
+
+for f in friends_as_dicts:
+    name = f['name']
+    occ = occupations[name]
+
+    try:
+        f['occupation'] = occ
+    except KeyError:
+        pass

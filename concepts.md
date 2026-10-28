@@ -30,7 +30,11 @@ iterator: un iterabil suspendat în execuție.
 PEP-8: the styleguide
 https://peps.python.org/pep-0008/
 
- 
+String formatting:
+https://docs.python.org/3/library/string.html#format-examples
+
+
+
 # Data types
 
 ## basic data types:
