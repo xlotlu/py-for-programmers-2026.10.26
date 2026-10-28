@@ -99,8 +99,9 @@ UnboundLocalError: la fel ca NameError, doar că simbolul
                    este definit mai jos în cod
 
 # VSCode utils
-Ctrl+F5    run without debugging
-Ctrl+/     comment
+Ctrl+F5       run without debugging
+Ctrl+/        comment
+Shift+Enter   execute selection 
 
 
 

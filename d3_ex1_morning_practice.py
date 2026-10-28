@@ -33,14 +33,18 @@ friends = [
 # transformați-l într-o listă de dicționare
 # cu cheile 'name', 'age', 'hobbies'
 
+"""
+# nu vrem să facem așa
 d = {}
 d['name'] = '...'
 d['age'] = '...'
 
+# vrem să facem așa
 d = {
     'name': name,
     'age': age,
 }
+"""
 
 # assignment-ul multiplu
 # se numește "iterable unpacking"
@@ -128,9 +132,13 @@ print(list(zip(lst, otherlst)))
 
 # controlabil ce se întâmplă dacă
 # iterabilele au lungimi diferite:
-print(list(
-    zip(lst, otherlst, strict=True)
-))
+
+try:
+    print(list(
+        zip(lst, otherlst, strict=True)
+    ))
+except ValueError:
+    print("nu putem zipa!")
 
 friends_as_dicts = []
 # zip aplicat:
