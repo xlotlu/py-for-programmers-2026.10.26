@@ -43,3 +43,7 @@ print(sum(ages) / len(ages))
 # dacă problema era să calculați și media, și minimul și maximul
 # vârstelor?
 print(min(ages), max(ages))
+
+
+# dar dacă cerința era să faceți asta într-o singură iterație?
+# (adică fără listă intermediară?)
