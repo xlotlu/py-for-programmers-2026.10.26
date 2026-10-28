@@ -49,8 +49,6 @@ print(min(ages), max(ages))
 # (adică fără listă intermediară?)
 
 # nu mai putem folosi list comprehension
-
-# scriem o funcție
 the_min = 0
 the_max = 0
 the_total = 0
