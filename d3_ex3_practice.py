@@ -126,4 +126,3 @@ def count_words(txt):
 
     return count_items(words)
 
-    
