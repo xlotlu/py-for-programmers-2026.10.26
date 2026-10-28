@@ -123,6 +123,7 @@ def count_words(txt):
 
     # part two:
     # scriem un dicționar: cheia cuvântul, valoarea count.
+
     return count_items(words)
 
     
