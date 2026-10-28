@@ -92,3 +92,6 @@ f'### {columns_str} ###'
 "Numele meu este {0} și am {1} ani.".format("Gigel", 45)
 "Numele meu este {1} și am {0} ani.".format("Gigel", 45)
 "Numele meu este {name} și am {age} ani.".format(age=45, name="Gigel")
+
+
+"Vârful {nume:_>8s} este la {dist:08d} distanță și altitudine {altitude:.04f}".format(nume="Omu", dist=350, altitude=1400.2345678)
