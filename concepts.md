@@ -14,6 +14,8 @@ Python este whitespace-sensitive!
 
 în Python, totul poate fi evaluat în context boolean
 
+"Python comes with batteries included"
+
 
 iterable: something that can be.... iterated
           (funcționează într-un for)
