@@ -16,6 +16,9 @@ Python este whitespace-sensitive!
 
 "Python comes with batteries included"
 
+Python is self-documenting, because docstrings.
+
+
 
 iterable: something that can be.... iterated
           (funcționează într-un for)
