@@ -65,6 +65,7 @@ list    # mutable
 
 print()
 help()
+type()
 
 
 # Operators
@@ -101,6 +102,9 @@ ValueError:  apare când valoarea este nepotrivită.
              (ce înseamnă asta este context-dependent.)
 IndexError:  nu există indexul
 KeyError:    nu există cheia
+
+AttributeError:    nu există atributul
+
 
 UnboundLocalError: la fel ca NameError, doar că simbolul
                    este definit mai jos în cod
