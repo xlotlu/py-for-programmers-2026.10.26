@@ -47,3 +47,27 @@ print(min(ages), max(ages))
 
 # dar dacă cerința era să faceți asta într-o singură iterație?
 # (adică fără listă intermediară?)
+
+# nu mai putem folosi list comprehension
+
+# scriem o funcție
+the_min = 0
+the_max = 0
+the_total = 0
+
+for p in people:
+    age = p['age']
+
+    if age > the_max:
+        the_max = age
+
+    if age < the_min:
+        the_min = age
+
+    the_total += age
+
+print(
+    the_total / len(people),
+    the_min,
+    the_max
+)
