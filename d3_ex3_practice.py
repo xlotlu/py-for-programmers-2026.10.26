@@ -50,9 +50,66 @@ import re
 
 def get_words(txt: str) -> list:
     #r"\w+" # raw string; \w means in regexp, word character
-    return re.findall(r"\w+")
+    return re.findall(r"\w+", txt)
+
+# v3.1
+_MATCH_WORD = re.compile(r"\w+")
+
+def get_words(txt: str) -> list:
+    #r"\w+" # raw string; \w means in regexp, word character
+    return _MATCH_WORD.findall(txt)
 
 
+
+# v. try/except
+def count_items(lst) -> dict:
+    """
+    returns a dictionary with keys each item
+    in `lst`, and values their respective
+    number of appearances
+    """
+    counts = {}
+
+    for item in lst:
+        try:
+            counts[item] += 1
+        except KeyError:
+            counts[item] = 1
+
+    return counts
+
+# v. if key in dict
+def count_items(lst) -> dict:
+    """
+    returns a dictionary with keys each item
+    in `lst`, and values their respective
+    number of appearances
+    """
+    counts = {}
+
+    for item in lst:
+        if item not in counts:
+            counts[item] = 0
+        
+        counts[item] += 1
+
+    return counts
+
+# v. alternativ, cu defaultdict
+from collections import defaultdict
+
+def count_items(lst) -> dict:
+    """
+    returns a dictionary with keys each item
+    in `lst`, and values their respective
+    number of appearances
+    """
+    counts = defaultdict(lambda: 0)
+
+    for item in lst:
+        counts[item] += 1
+
+    return counts
 
 
 def count_words(txt):
@@ -62,6 +119,9 @@ def count_words(txt):
     #
     # să lăsăm doar cuvinte
 
+    words = get_words(txt)
+
     # part two:
     # scriem un dicționar: cheia cuvântul, valoarea count.
 
+    
