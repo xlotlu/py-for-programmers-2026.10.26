@@ -49,7 +49,9 @@ print(min(ages), max(ages))
 # (adică fără listă intermediară?)
 
 # nu mai putem folosi list comprehension
-the_min = 0
+import math
+
+the_min = math.inf
 the_max = 0
 the_total = 0
 
