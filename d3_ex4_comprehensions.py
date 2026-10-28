@@ -32,3 +32,4 @@ people = [
 #
 # luați în considerare că funcția sum rulează pe un iterabil
 
+# ce preferați? list comprehension sau map?
