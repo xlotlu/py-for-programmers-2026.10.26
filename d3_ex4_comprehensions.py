@@ -33,3 +33,9 @@ people = [
 # luați în considerare că funcția sum rulează pe un iterabil
 
 # ce preferați? list comprehension sau map?
+
+
+ages = [  p['age'] for p in people   ]
+
+print(sum(ages) / len(ages))
+
