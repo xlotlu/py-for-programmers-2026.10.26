@@ -35,7 +35,11 @@ people = [
 # ce preferați? list comprehension sau map?
 
 
-ages = [  p['age'] for p in people   ]
+ages = [  p['age'] for p in people  ]
 
 print(sum(ages) / len(ages))
 
+
+# dacă problema era să calculați și media, și minimul și maximul
+# vârstelor?
+print(min(ages), max(ages))
