@@ -80,7 +80,11 @@ friends_as_dicts[2]['age']
 
 
 # Exercițiu de gândire:
-# dataset-ului nostru i se tot schimbă numărul de coloane.
+# dataset-ului nostru i se tot schimbă numărul de coloane:
+
+for f in friends:
+    f.extend(["The Street", "072x", 'someone@somewhere.com'])
+
 # așa că ne-am enervat (constructiv!) și ne-am setat
 # coloanele într-o variabilă.
 
