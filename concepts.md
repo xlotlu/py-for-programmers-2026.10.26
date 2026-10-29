@@ -124,3 +124,6 @@ There are 10 types of people, those who can read binary and those who can't.
 
 
 There are 2 most difficult problems in computing:
+- naming things
+- cache invalidation
+- off-by-one errors
