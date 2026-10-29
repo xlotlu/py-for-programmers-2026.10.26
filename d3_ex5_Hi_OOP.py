@@ -46,3 +46,23 @@ class Point:
     def get_distance_from_origin(self):
         pass
 #   notă: există math.sqrt
+
+import math
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return f"Point({self.x}, {self.y})"
+
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
+    def translate(self, dx, dy):
+        self.x += dx
+        self.y += dy
+
+    def get_distance_from_origin(self):
+        return math.sqrt(self.x**2 + self.y**2)
