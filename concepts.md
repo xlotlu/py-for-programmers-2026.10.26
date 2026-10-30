@@ -36,7 +36,8 @@ https://peps.python.org/pep-0008/
 String formatting:
 https://docs.python.org/3/library/string.html#format-examples
 
-
+Date and time formatting
+https://docs.python.org/3/library/datetime.html#format-codes
 
 # Data types
 
