@@ -39,6 +39,12 @@ https://docs.python.org/3/library/string.html#format-examples
 Date and time formatting
 https://docs.python.org/3/library/datetime.html#format-codes
 
+
+```python
+import this
+```
+
+
 # Data types
 
 ## basic data types:
