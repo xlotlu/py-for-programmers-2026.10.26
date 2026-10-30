@@ -79,30 +79,37 @@ class YetAnotherChild(Parent):
         # do_something_with(my_kwarg)
         return super().method(*args, **kwargs)
 
-def func(arg, kwarg=None):
-    pass
-def func(arg, *, kwarg=None):
-    pass
 def func1(arg, kwarg=None):
     pass
-def func2(arg, *, kwarg=None):
-    pass
+
+# both work
 func1(1, 2)
 func1(arg=1, kwarg=2)
-func2(1, 2)
-func2(1, kwarg=2)
+
 def func2(arg, *, kwarg=None):
     pass
-func1(arg=1, kwarg=2)
+
+# fails
+func2(1, 2)
+# works
+func2(1, kwarg=2)
+# works
+func2(arg=1, kwarg=2)
+
 def func3(arg, /, kwarg=None):
     pass
+
+# works
 func3(1, 2)
+# fails
 func3(arg=1, kwarg=2)
 func3(1, kwarg=2)
-def func4(arg, *, /, kwarg=None):
-    pass
+
 def func4(arg, /, *, kwarg=None):
     pass
+# the only one that is ok
 func4(1, kwarg=2)
+# fails
 func4(arg=1, kwarg=2)
+# fails
 func4(1, 2)

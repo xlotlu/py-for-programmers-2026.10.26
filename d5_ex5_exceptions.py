@@ -18,7 +18,7 @@ finally:
     # always will be run
     statements
 
-# cum facem cun catch-all în timp ce capturăm excepția?
+# cum facem un catch-all în timp ce capturăm excepția?
 try:
     something
 except Exception as e:

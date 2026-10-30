@@ -52,16 +52,8 @@ if __name__ == "__main__":
     print(f"Payload:   {args.payload}")
 
 
-    sys.exit()
-
-
     delta = get_delta_from(
-        parse_timespec(
-            sys.argv[1]
-        )
+        parse_timespec(args.timespec)
     )
 
     print(f"will wait for: {delta}")
-
-
-

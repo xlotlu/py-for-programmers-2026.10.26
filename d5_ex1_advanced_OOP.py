@@ -90,4 +90,3 @@ class CustomAttr:
         # a face override la the very basic attribute access
         print("» i spy:", name)
         return super().__getattribute__(name)
-
